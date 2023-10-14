@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Item</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" text="text/css" href="/static/css/bootstrap.min.css">
+        <style>
+                body { height: 2000px; }
+        header {background-color: #5D6DBE;}
+        #log {float: right; font-size: 12px; color: #333; text-decoration: none; margin-top: 10px; margin-right: 300px;}
+        #log li {display: inline;}
+        #log hr {display: inline; margin-right: 3px;}
+        #log a:visited {text-decoration: none; color: white;}
+        #log a:link {text-decoration: none; color: white;}
+
+
+        *{padding:0;margin:0}
+        li{list-style:none}
+        a{text-decoration:none;font-size:12px}
+        nav { width: 100%; display: flex; justify-content: center; position: relative; background: #ffffff;}
+        #main-menu > li { float: left; position: relative;}
+        #main-menu > li > a { font-size: 0.85rem; color: black; text-align: center; text-decoration: none; letter-spacing: 0.05em; display: block; padding: 14px 36px; border-right: 1px solid rgba(0,0,0,0.15); text-shadow: 1px 1px 1px rgba(0,0,0,0.2);}
+        #main-menu > li:nth-child(1) > a {border-left: 1px solid rgba(0,0,0,0.15);}
+
+        #sub-menu {position: absolute;  opacity: 0; visibility: hidden; transition: all 0.15s ease-in; background: #ffffff;}
+
+        #sub-menu > li {padding: 16px 28px; border: 1px solid rgba(0,0,0,0.15);}
+
+        #sub-menu > li >  a {color: black; text-decoration: none; }
+
+        #main-menu > li:hover #sub-menu { opacity: 1; visibility: visible;}
+
+        #sub-menu > li >  a:hover {text-decoration: underline;}
+
+        .search1 {text-align: center; margin-left: 375px;}
+        img {width: 200px;}
+        .inner {position: relative; width: 600px; height: 40px; margin: 20px auto; border: 1px solid #bdc1c6; border-radius: 20px; margin-bottom: 30px;}
+
+        input {width: 100%; height: 100%; border-color: #bdc1c6; border: 1px solid #bdc1c6; border-radius: 20px; font-size: 16px; outline: none; }
+
+
+
+        i:hover {cursor: pointer;}
+         .searching {position: absolute; right: 10px; top: 20%;}
+        .fa-keyboard {margin-right: 10px;}
+            #gg1 {float: right; color:white ; margin: 50px 30px 0 0;}
+            #gg1 li{list-style-type: none;}
+            footer {background-color: #5d5b5a; width: 100%; height: 150px;}
+            #siq {font-size: 12px;}
+            #tq {color: red;}
+            .floating {position: fixed; right: 50%; top: 500px; margin-right: -720px; text-align:center; width: 100px; border-right: 2px solid; border-left: 2px solid; border-bottom: 2px solid; }
+            .floating a {text-decoration: none; color: black;}
+            .floating li { border-top: 2px solid;}
+            li {list-style: none;}
+            a:visited{text-decoration: none; color: rgb(0, 0, 0);}
+            a:link{text-decoration: none; color: rgb(0, 0, 0);}
+            .qt {border-color: #333; margin: 0 auto; text-align:center; color: green; border-width: 20px;}
+            
+            </style>
+      <script src="https://kit.fontawesome.com/b3c3d4a375.js" crossorigin="anonymous"></script>
+       
+    </head>
+
+<body class="d-flex flex-column min-vh-100">
+         <header>
+          <div id="log">
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+                <hr>
+                <li><a href="join.html">회원가입</a></li>
+            </ul>
+          </div>
+          <div class="search1">
+              <a href="index.html">
+              <img src="image/logo.png">
+              </a>
+          </div>
+          <div class="inner">
+          <input type="search">
+              <div class="searching">
+                  <i class="fas fa-search"></i>
+              </div>
+          </div>
+        </header>
+        <!-- Navigation-->
+        <nav role="navigation" style="z-index:2">
+        <ul id="main-menu">
+            <li><a href="#">카테고리</a>
+                <ul id="sub-menu">
+                <li><a href="saryo.html" aria-label="subemnu">수제사료</a></li>
+                <li><a href="gansik.html" aria-label="subemnu">수제간식</a></li>
+                <li><a href="cat.html" aria-label="subemnu">고양이간식</a></li>
+                <li><a href="life.html" aria-label="subemnu">영양제</a></li>
+                </ul>
+            </li>
+            <li><a href="#">브랜드</a>
+              <ul id="sub-menu">
+                <li><a href="poppy.html" aria-label="subemnu">파피앤덕</a></li>
+                <li><a href="healing.html" aria-label="subemnu">힐링펫</a></li>
+                <li><a href="doctor.html" aria-label="subemnu">닥터바이</a></li>
+                <li><a href="wall.html" aria-label="subemnu">네이월</a></li>
+              </ul>
+            </li>
+            <li><a href="rank.html">랭킹</a></li>
+            <li><a href="event.html">이벤트</a></li>
+            <li><a href="notice.html">공지사항</a></li>
+            <li><a href="jbgn.html">장바구니</a></li>
+              <li><a href="comu.html">커뮤니티</a></li>
+        </ul>
+        </nav>
+        <!--Floating-->
+        <div class="floating">
+            <ul>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="#">최근본상품</a></li>
+              <li><a href="#">맨위로</a></li>
+            </ul>
+          </div>
+<section class="py-5">
+<div class="container">
+    <div class="row my-5">
+        <h3>영양제</h3><hr>
+    <div class="col-3">
+        <a href><img src="https://shop-phinf.pstatic.net/20210817_90/16291742133167l0Gj_PNG/30310055969643692_547227953.png?type=f295_381"><br></a>
+        <span id="siq"><a href>기관지영양제</a><br>
+        28,900원<br>
+        <span id="tq">★</span> 4.9 (11,062)
+        </span>
+    </div>
+    <div class="col-3">
+        <a href><img src="https://shop-phinf.pstatic.net/20230814_283/1691976912909pV0xm_PNG/6426313140884684_609392717.png?type=f295_381"><br></a>
+        <span id="siq"><a href>눈 영양제</a><br>
+        24,900원<br>
+        <span id="tq">★</span> 4.8 (13,062)
+        </span>
+    </div>
+    <div class="col-3">
+        <a href><img src="https://shop-phinf.pstatic.net/20230821_251/1692582402158on1Ep_PNG/7472108966787836_458984356.png?type=f295_381"><br></a>
+        <span id="siq"><a href>관절영양제</a><br>
+        24,900원<br>
+        <span id="tq">★</span> 4.9 (10,062)
+        </span>
+    </div>
+    <div class="col-3">
+        <a href><img src="https://shop-phinf.pstatic.net/20220609_142/1654762277515da6B2_PNG/55898112286996967_145897793.png?type=f295_381"><br></a>
+        <span id="siq"><a href>유산균영양제</a><br>
+        28,900원<br>
+        <span id="tq">★</span> 4.9 (14,062)
+        </span>
+    </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row my-5">
+    <div class="col-3">
+        <a href><img src="https://shop-phinf.pstatic.net/20230821_37/1692593895843RzKIM_PNG/16505298725063210_704740379.png?type=f295_381"><br></a>
+        <span id="siq"><a href>피부영양제</a><br>
+        10,500원<br>
+        <span id="tq">★</span> 4.9 (9,062)
+        </span>
+    </div>
+    <div class="col-3">
+        <a href><img src="https://shop-phinf.pstatic.net/20230315_43/1678846947813R0tNH_PNG/6149631688753913_1887905782.png?type=f295_381"><br></a>
+        <span id="siq"><a href>고양이치약</a><br>
+        14,900원<br>
+        <span id="tq">★</span> 4.9 (21,062)
+        </span>
+    </div>
+    <div class="col-3">
+        <a href><img src="https://shop-phinf.pstatic.net/20230822_110/169267978958104EHO_JPEG/16591192499184512_358431576.jpg?type=f295_381"><br></a>
+        <span id="siq"><a href>유산균껌</a><br>
+        12,900원<br>
+        <span id="tq">★</span> 4.9 (3,062)
+        </span>
+    </div>
+    <div class="col-3">
+        <a href><img src="https://shop-phinf.pstatic.net/20230515_68/1684116769298uEcIP_PNG/9223397564954255_145015229.png?type=f295_381"><br></a>
+        <span id="siq"><a href>심장영양제</a><br>
+        24,900원<br>
+        <span id="tq">★</span> 4.9 (10,062)
+        </span>
+    </div>
+    </div>
+</div>
+<div class="qt">
+    <button>1</button>
+</div>
+</section>
+
+
+        <!-- Footer-->
+        <footer class="mt-auto">
+            <div id="gg1">
+                <ul>
+                      <li>주소: 충청남도 천안시 동남구 호서대길 12</li>
+                      <li>TEL:031-123-1234 Email : MODT@naver.com</li>
+                      <li>COPYRIGHT (C) MODT ALL RIGHTS RESERVED</li>
+          </ul>
+          </div>
+        </footer>
+                <!-- Bootstrap core JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Core theme JS-->
+                <script src="js/scripts.js"></script>
+            </body>
+        </html>

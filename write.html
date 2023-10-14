@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>금강산도 식후견에 오신것을 환영합니다.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+        body { height: 2000px; }
+        header {background-color: #5D6DBE;}
+        #log {float: right; font-size: 12px; color: #333; text-decoration: none; margin-top: 10px; margin-right: 300px;}
+        #log li {display: inline;}
+        #log hr {display: inline; margin-right: 3px;}
+        #log a:visited {text-decoration: none; color: white;}
+        #log a:link {text-decoration: none; color: white;}
+
+
+        *{padding:0;margin:0}
+        li{list-style:none}
+        a{text-decoration:none;font-size:14px}
+
+        nav { width: 100%; display: flex; justify-content: center; position: relative; background: #ffffff; }
+        #main-menu > li { float: left; position: relative;}
+        #main-menu > li > a { font-size: 1.45rem; color: black; text-align: center; text-decoration: none; letter-spacing: 0.05em; display: block; padding: 14px 36px; border-right: 1px solid rgba(0,0,0,0.15); text-shadow: 1px 1px 1px rgba(0,0,0,0.2);}
+        #main-menu > li:nth-child(1) > a {border-left: 1px solid rgba(0,0,0,0.15);}
+
+        #sub-menu {position: absolute;  opacity: 0; visibility: hidden; transition: all 0.15s ease-in; background: #ffffff;}
+
+        #sub-menu > li {padding: 16px 28px; border: 1px solid rgba(0,0,0,0.15);}
+
+        #sub-menu > li >  a {color: black; text-decoration: none; }
+
+        #main-menu > li:hover #sub-menu { opacity: 1; visibility: visible;}
+
+        #sub-menu > li >  a:hover {text-decoration: underline;}
+
+        .search1 {text-align: center; margin-left: 375px;}
+        img {width: 200px;}
+        .inner {position: relative; width: 600px; height: 40px; margin: 20px auto; border: 1px solid #bdc1c6; border-radius: 20px; margin-bottom: 30px;}
+
+        input {width: 100%; height: 100%; border-color: #bdc1c6; border: 1px solid #bdc1c6; border-radius: 20px; font-size: 16px; outline: none; }
+
+
+
+        i:hover {cursor: pointer;}
+         .searching {position: absolute; right: 10px; top: 20%;}
+        .fa-keyboard {margin-right: 10px;}
+        .floating {position: fixed; right: 50%; top: 500px; margin-right: -720px; text-align:center; width: 120px; border-right: 2px solid; border-left: 2px solid; border-bottom: 2px solid; }
+        .floating a {text-decoration: none; color: black;}
+        .floating li { border-top: 2px solid;}
+        #gg1 {float: right; color:white ; margin: 50px 30px 0 0;}
+        #gg1 li{list-style-type: none;}
+        footer {background-color: #5d5b5a; width: 100%; height: 150px; }
+
+  </style>
+  <script src="https://kit.fontawesome.com/b3c3d4a375.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <header>
+          <div id="log">
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+                <hr>
+                <li><a href="join.html">회원가입</a></li>
+            </ul>
+          </div>
+          <div class="search1">
+              <a href="index.html">
+              <img src="image/logo.png">
+              </a>
+          </div>
+          <div class="inner">
+          <input type="search">
+              <div class="searching">
+                  <i class="fas fa-search"></i>
+              </div>
+          </div>
+            <nav role="navigation" style="z-index:2">
+              <ul id="main-menu">
+                  <li><a href="#">카테고리</a>
+                      <ul id="sub-menu">
+                      <li><a href="saryo.html" aria-label="subemnu">수제사료</a></li>
+                      <li><a href="gansik.html" aria-label="subemnu">수제간식</a></li>
+                      <li><a href="cat.html" aria-label="subemnu">고양이간식</a></li>
+                      <li><a href="life.html" aria-label="subemnu">영양제</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">브랜드</a>
+                    <ul id="sub-menu">
+                    <li><a href="poppy.html" aria-label="subemnu">파피앤덕</a></li>
+                    <li><a href="healing.html" aria-label="subemnu">힐링펫</a></li>
+                    <li><a href="doctor.html" aria-label="subemnu">닥터바이</a></li>
+                    <li><a href="wall.html" aria-label="subemnu">네이월</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="rank.html">랭킹</a></li>
+                  <li><a href="event.html">이벤트</a></li>
+                  <li><a href="notice">공지사항</a></li>
+                  <li><a href="jbgn.html">장바구니</a></li>
+                  <li><a href="comu.html">커뮤니티</a></li>
+              </ul>
+          </nav>
+        </header>
+        <section>
+
+          <div class="floating">
+            <ul>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="#">최근본상품</a></li>
+              <li><a href="#">맨위로</a></li>
+            </ul>
+          </div>
+
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>공지사항</strong>
+            <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+        </div>
+        <div class="board_write_wrap">
+            <div class="board_write">
+                <div class="title">
+                    <dl>
+                        <dt>제목</dt>
+                        <dd><input type="text" placeholder="제목 입력"></dd>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd><input type="text" placeholder="글쓴이 입력"></dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd><input type="password" placeholder="비밀번호 입력"></dd>
+                    </dl>
+                </div>
+                <div class="cont">
+                    <textarea placeholder="내용 입력"></textarea>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="view.html" class="on">등록</a>
+                <a href="list.html">취소</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

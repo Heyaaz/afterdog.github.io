@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Item</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" text="text/css" href="/static/css/bootstrap.min.css">
+        <style>
+                body { height: 2000px; }
+        header {background-color: #5D6DBE;}
+        #log {float: right; font-size: 12px; color: #333; text-decoration: none; margin-top: 10px; margin-right: 300px;}
+        #log li {display: inline;}
+        #log hr {display: inline; margin-right: 3px;}
+        #log a:visited {text-decoration: none; color: white;}
+        #log a:link {text-decoration: none; color: white;}
+
+
+        *{padding:0;margin:0}
+        li{list-style:none}
+        a{text-decoration:none;font-size:12px}
+        nav { width: 100%; display: flex; justify-content: center; position: relative; background: #ffffff;}
+        #main-menu > li { float: left; position: relative;}
+        #main-menu > li > a { font-size: 0.85rem; color: black; text-align: center; text-decoration: none; letter-spacing: 0.05em; display: block; padding: 14px 36px; border-right: 1px solid rgba(0,0,0,0.15); text-shadow: 1px 1px 1px rgba(0,0,0,0.2);}
+        #main-menu > li:nth-child(1) > a {border-left: 1px solid rgba(0,0,0,0.15);}
+
+        #sub-menu {position: absolute;  opacity: 0; visibility: hidden; transition: all 0.15s ease-in; background: #ffffff;}
+
+        #sub-menu > li {padding: 16px 28px; border: 1px solid rgba(0,0,0,0.15);}
+
+        #sub-menu > li >  a {color: black; text-decoration: none; }
+
+        #main-menu > li:hover #sub-menu { opacity: 1; visibility: visible;}
+
+        #sub-menu > li >  a:hover {text-decoration: underline;}
+
+        .search1 {text-align: center; margin-left: 375px;}
+        img {width: 200px;}
+        .inner {position: relative; width: 600px; height: 40px; margin: 20px auto; border: 1px solid #bdc1c6; border-radius: 20px; margin-bottom: 30px;}
+
+        input {width: 100%; height: 100%; border-color: #bdc1c6; border: 1px solid #bdc1c6; border-radius: 20px; font-size: 16px; outline: none; }
+
+
+
+        i:hover {cursor: pointer;}
+         .searching {position: absolute; right: 10px; top: 20%;}
+        .fa-keyboard {margin-right: 10px;}
+            #gg1 {float: right; color:white ; margin: 50px 30px 0 0;}
+            #gg1 li{list-style-type: none;}
+            footer {background-color: #5d5b5a; width: 100%; height: 150px;}
+            #siq {font-size: 12px;}
+            #tq {color: red;}
+            .floating {position: fixed; right: 50%; top: 500px; margin-right: -720px; text-align:center; width: 100px; border-right: 2px solid; border-left: 2px solid; border-bottom: 2px solid; }
+            .floating a {text-decoration: none; color: black;}
+            .floating li { border-top: 2px solid;}
+            li {list-style: none;}
+            a:visited{text-decoration: none; color: rgb(0, 0, 0);}
+            a:link{text-decoration: none; color: rgb(0, 0, 0);}
+            .qt {border-color: #333; margin: 0 auto; text-align:center; color: green; border-width: 20px;}
+            
+            </style>
+      <script src="https://kit.fontawesome.com/b3c3d4a375.js" crossorigin="anonymous"></script>
+       
+    </head>
+
+    
+    <body class="d-flex flex-column min-vh-100">
+            <header>
+             <div id="log">
+               <ul>
+                   <li><a href="login.html">로그인</a></li>
+                   <hr>
+                   <li><a href="join.html">회원가입</a></li>
+               </ul>
+             </div>
+             <div class="search1">
+                 <a href="index.html">
+                 <img src="image/logo.png">
+                 </a>
+             </div>
+             <div class="inner">
+             <input type="search">
+                 <div class="searching">
+                     <i class="fas fa-search"></i>
+                 </div>
+             </div>
+           </header>
+           <!-- Navigation-->
+        <nav role="navigation" style="z-index:2">
+        <ul id="main-menu">
+            <li><a href="#">카테고리</a>
+                <ul id="sub-menu">
+                <li><a href="saryo.html" aria-label="subemnu">수제사료</a></li>
+                <li><a href="gansik.html" aria-label="subemnu">수제간식</a></li>
+                <li><a href="cat.html" aria-label="subemnu">고양이간식</a></li>
+                <li><a href="life.html" aria-label="subemnu">영양제</a></li>
+                </ul>
+            </li>
+            <li><a href="#">브랜드</a>
+              <ul id="sub-menu">
+                <li><a href="poppy.html" aria-label="subemnu">파피앤덕</a></li>
+                <li><a href="healing.html" aria-label="subemnu">힐링펫</a></li>
+                <li><a href="doctor.html" aria-label="subemnu">닥터바이</a></li>
+                <li><a href="wall.html" aria-label="subemnu">네이월</a></li>
+              </ul>
+            </li>
+            <li><a href="rank.html">랭킹</a></li>
+            <li><a href="event.html">이벤트</a></li>
+            <li><a href="notice.html">공지사항</a></li>
+            <li><a href="jbgn.html">장바구니</a></li>
+              <li><a href="comu.html">커뮤니티</a></li>
+        </ul>
+        </nav>
+        <!-- Product section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-5"><img class="card-img-top mb-5 mb-md-0" src="https://shop-phinf.pstatic.net/20230104_106/1672820418595T1q2m_JPEG/73956198291463080_707825051.jpg?type=m510" alt="..." /></div>
+                    <div class="col-md-6">
+                        
+                        <h1 class="display-5 fw-bolder">고구마말랭이100g</h1>
+                        
+                        <p class="lead">판매가격 : 5,000원</p>
+                        <p class="lead">적립금   :   5%</p>
+                        <p class="lead">할인가격 : 4,900원</p>
+
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">수량</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">1</a></li>
+                                <li><a class="dropdown-item" href="#!">2</a></li>
+                                <li><a class="dropdown-item" href="#!">3</a></li>
+                                <li><a class="dropdown-item" href="#!">4</a></li>
+                               
+                            </ul>
+                        </li>
+                        
+                              
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                            <div class="col-3 d-grid p-1">
+                               <a href="jbgn.html">
+                                <button type="button" class="btn btn-lg btn-dark">장바구니</button>
+                               </a>
+                            </div>
+                            <div class="col-3 d-grid p-1">
+                                <button type="button" class="btn btn-lg btn-dark">구매</button>
+                            </div>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+         <div class="row">
+            <div class="col-sm">
+                <button class="btn btn-default" type="submit">상품정보</button>
+                
+            </div>
+            <div class="col-sm">
+                <button class="btn btn-default" type="submit">반품/교환정보</button>
+            </div>
+            <div class="col-sm">
+                <button class="btn btn-default" onclick="location.href='review2.html'" type="submit">리뷰<span>3</span></button>
+                    
+               
+               
+               
+               
+                
+            </div>
+            <div class="col-sm">
+                <button class="btn btn-default" type="submit">Q&A <span>5</span></button>
+            </div>
+           
+         </div>
+        
+                <div class="mx-auto" style="width: 300px;">
+                    <div class="col-12">
+                    <img src="https://shop-phinf.pstatic.net/20230104_64/1672820427342V36Oy_JPEG/73956207055553699_1489569756.jpg?type=m510" alt="..." /></div>
+                    <div class="col-12">
+                    <img src="https://shop-phinf.pstatic.net/20230104_106/1672820418595T1q2m_JPEG/73956198291463080_707825051.jpg?type=m510" alt="..." /></div>
+                    
+                     
+        </div>
+       </div>
+       </div>
+         </div>
+        
+                   
+                 
+        <!-- Related items section-->
+        <section class="py-5 bg-light">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder mb-4">관련 상품</h2>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://shop-phinf.pstatic.net/20220729_126/1659077746615TqBeD_JPEG/60213581446753843_1136069330.jpg?type=f296_296" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">황태채40g</h5>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>  
+                                    <!-- Product price-->
+                                     5,600원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://shop-phinf.pstatic.net/20180405_187/natureworld_1522858999825wfAf8_JPEG/5490179474720783_771928139.jpg?type=f296_296" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">소간육포120g</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">6,000원</span>
+                                    4,200원
+                                    
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://shop-phinf.pstatic.net/20201224_24/1608769707795DkpDq_JPEG/9905553439138745_935104402.jpg?type=f296_296" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">오리황태말이6p+6p</h5>
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>    
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">6,300원</span>
+                                    6,200원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://shop-phinf.pstatic.net/20161127_47/natureworld_1480210192851uyE7E_JPEG/4554430564744295_40032828.JPG?type=f296_296" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">닭고구마말이6p</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    3,800원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer>
+            <div id="gg1">
+                <ul>
+                      <li>주소: 충청남도 천안시 동남구 호서대길 12</li>
+                      <li>TEL:031-123-1234 Email : MODT@naver.com</li>
+                      <li>COPYRIGHT (C) MODT ALL RIGHTS RESERVED</li>
+          </ul>
+          </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
